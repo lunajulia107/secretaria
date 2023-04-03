@@ -1,0 +1,22 @@
+{
+  "name": "soufieb-design-system",
+  "version": "1.0.0",
+  "description": "FIEB - Secretária Virtual",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "build-css": "sass app/public/style/main.scss app/public/style/main.css"
+  },
+  "keywords": [
+    "Lupita@107"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "sass": "^1.60.0"
+  }
+}

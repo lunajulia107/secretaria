@@ -1,0 +1,141 @@
+/* HOME */
+/* INÍCIO DA MAIN */
+.cn-main {
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background: #fff;
+
+    /* INÍCIO DA CONTAINER */
+    .container {  
+        /* INÍCIO DA LINHA */
+        div {
+            /* INÍCIO DO CARD1 */
+            .cn-card1 {
+                /* INÍCIO DA NAVEGAÇÃO */
+                #nav-menu {
+                    padding: 10px 16px 10px 0;
+    
+                    @media(min-width: 0px) and (max-width: 768px) {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        width: 210px;
+                        height: 100vh;
+                        padding: 16px;
+                        background: #fff;
+                        border-radius: 20px 0 0 0;
+                        z-index: 999;
+                    } 
+
+                    /* INÍCIO DA DIV - MOBILE */
+                    #cn-menu-mobile {
+                        display: none;
+    
+                        @media(min-width: 0px) and (max-width: 768px) {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+    
+                            i {
+                                font-size: 25px;
+                            }
+    
+                            button { 
+                                padding: 0;
+                                text-decoration: none;
+                                color: $thirdColor;
+                            }
+                        }
+                    }
+                    /* FIM DA DIV - MOBILE */
+
+                    /* INÍCIO DA LINHA*/
+                    ul { 
+                        /* INÍCIO DO PERFIL */ 
+                        .cn-profile {
+                            display: none;
+    
+                            @media(min-width: 0px) and (max-width: 768px) {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                margin-bottom: 50px;
+                            }
+    
+                            img {
+                                @media(min-width: 0px) and (max-width: 768px) {
+                                    width: 62px;
+                                    height: 62px;
+                                }
+                            }
+    
+                            .cn-name {
+                                font-size: 16px;
+                                font-weight: 500;
+                                text-align: center;
+                            }
+    
+                            .cn-info {
+                                font-size: 14px;
+                                text-align: center;
+                            }
+                        }
+                        /* FIM DO PERFIL */ 
+    
+                        /* INÍCIO DA LI */ 
+                        li {
+                            /* INÍCIO DOS LINKS */ 
+                            a {
+                                /* INÍCIO DA DIV ÍCONE */ 
+                                .cn-icon {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 28px;
+                                    height: 28px;
+                                    margin-right: 10px;
+                                    padding: 4px;
+                                    box-sizing: border-box;
+                                    background: $primaryColor;
+                                    border-radius: 10px 10px 0 10px;
+    
+                                    i {
+                                        font-size: 12px;
+                                        color: #fff;
+                                    }
+                                }
+                                /* FIM DA DIV ÍCONE */ 
+    
+                                h6 {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: $primaryColor;
+    
+                                    span {
+                                        font-size: 13px;
+                                        font-weight: 400;
+                                        color: $thirdColor;
+                                    }
+                                }
+                            }
+                            /* FIM DOS LINKS */ 
+                        }
+                        /* FIM DA LI */ 
+                    }
+                    /* FIM DA LINHA */
+                }
+                /* FIM DA LINHA */
+            }
+            /* FIM DO CARD1 */
+    
+        }
+        /* FIM DA LINHA */
+       
+    }
+    /* FIM DO CONTAINER */
+}
+/* FIM DA MAIN */ 

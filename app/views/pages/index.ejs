@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIEB - Secretária Virtual</title>
+  <!-- Boxcn-icons -->
+  <link href='https://unpkg.com/boxcn-icons@2.1.4/css/boxcn-icons.min.css' rel='stylesheet'>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Booststrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Option 1: Include in HTML -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+  <!-- INÍCIO GERAL -->
+  <div class="container-geral">
+    <!-- INÍCIO HEADER -->
+    <header class="cn-header">
+      <!-- INÍCIO CONTAINER -->
+      <div class="container h-10">
+        <!-- INÍCIO LOGO -->
+        <a href="/" class="cn-logo">
+          <img class="img-fluid" src="images/logo.svg" alt="Logo - FIEB">
+        </a>
+        <!-- FIM LOGO -->
+
+        <!-- INÍCIO PERFIL -->
+        <div id="info-profile" class="cn-profile">
+          <!-- PERFIL: BOTÃO -->
+          <div class="cn-avatar d-flex flex-row">
+            <div class="cn-name">
+              Robespierre de Souza
+            </div>
+            <img src="/images/user.svg" class="img-fluid" alt="Foto do usuário" srcset="">
+
+            <i class="bi bi-chevron-down"></i>
+          </div>
+
+          <!-- PERFIL: MENU -->
+          <div id="menu-profile" class="cn-profile-menu d-flex flex-column" style="visibility: hidden;">
+            <button type="button" class="go-out btn btn-link">Sair</button>
+            <div class="cn-profile-name">
+              Robespierre de Souza
+            </div>
+            <div class="cn-profile-info">
+              rob@fieb.edu.br <br>
+              RM 123456
+            </div>
+            <a href="" class="cn-profile-info btn btn-link">Ver dados</a>
+          </div>
+        </div>
+        <!-- FIM PERFIL -->
+
+        <!-- MOBILE - BARS -->
+        <button id="cn-menu-bars" class="cn-bars">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+      <!-- FIM CONTAINER -->
+    </header>
+    <!-- FIM HEADER -->
+
+    <!-- INÍCIO DO MAIN -->
+    <main class="cn-main">
+      <!-- INÍCIO DO CONTAINER -->
+      <div class="container">
+        <!-- INÍCIO DA LINHA -->
+        <div class="d-flex flex-row">
+          <!-- INÍCIO DO CARD -->
+          <div class="cn-card1 col-lg-2.5 col-xl-2.5 col-xxl-2.5">
+            <!-- INÍCIO DA NAVEGAÇÃO -->
+            <div id="nav-menu">
+              <!-- INÍCIO DA DIV - MOBILE -->
+              <div id="cn-menu-mobile">
+                <i id="cn-menu-close" class="bi bi-x"></i>
+                <button type="button" class="go-out btn btn-link">Sair</button>
+              </div>
+              <!-- FIM DA DIV - MOBILE -->
+              <!-- INÍCIO DA LISTA -->
+              <ul>
+                <!-- INÍCIO DO PERFIL -->
+                <li id="info-profile" class="cn-profile">
+                  <img src="/images/user.svg" class="img-fluid mb-2" alt="Foto do usuário" srcset="">
+                  <div class="cn-name mb-1">
+                    Robespierre de Souza
+                  </div>
+                  <div class="cn-info">
+                    rob@fieb.edu.br <br>
+                    RM 123456
+                  </div>
+                </li>
+                <!-- FIM DO PERFIL -->
+                <!-- INÍCIO DOS LINKS -->
+                <li class="cn-link">
+                  <a href="" class="d-flex flex-row">
+                    <!-- INÍCIO DA DIV ÍCONE -->
+                    <div class="cn-icon">
+                      <i class="fa-solid fa-house"></i>
+                    </div>
+                    <!-- FIM DA DIV ÍCONE -->
+                    <h6 class="d-flex flex-column mb-3">Início
+                      <span class="mb-2">Sua página inicial</p>
+                    </h6>
+                  </a>
+                </li>
+                <li class="cn-link">
+                  <a href="" class="d-flex flex-row">
+                    <!-- INÍCIO DA DIV ÍCONE -->
+                    <div class="cn-icon">
+                      <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <!-- FIM DA DIV ÍCONE -->
+                    <h6 class="d-flex flex-column mb-3">Matrícula
+                      <span class="mb-2">Efetivação das matrículas</p>
+                    </h6>
+                  </a>
+                </li>
+                <li class="cn-link">
+                  <a href="" class="d-flex flex-row">
+                    <!-- INÍCIO DA DIV ÍCONE -->
+                    <div class="cn-icon">
+                      <i class="fa-solid fa-address-card"></i>
+                    </div>
+                    <!-- FIM DA DIV ÍCONE -->
+                    <h6 class="d-flex flex-column mb-3">Consulta
+                      <span class="mb-2">Consulta de alunos</p>
+                    </h6>
+                  </a>
+                </li>
+                <li class="cn-link">
+                  <a href="" class="d-flex flex-row">
+                    <!-- INÍCIO DA DIV ÍCONE -->
+                    <div class="cn-icon">
+                      <i class="fa-solid fa-image-portrait"></i>
+                    </div>
+                    <!-- FIM DA DIV ÍCONE -->
+                    <h6 class="d-flex flex-column mb-3">Fotos
+                      <span class="mb-2">Atualiza as fotos</p>
+                    </h6>   
+                  </a>
+                </li>
+                <!-- FIM DOS LINKS -->
+              </ul>
+              <!-- FIM DA LISTA -->
+            </div>
+            <!-- FIM DA NAVEGAÇÃO -->
+          </div>
+          <!-- FIM DO CARD -->
+
+          <!-- INÍCIO DO CONTEÚDO -->
+          <!-- INÍCIO DO CARD2 -->
+          <div class="cn-card2 col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-10">
+            <!-- INÍCIO DO CONTAINER -->
+            <div class="container">
+              <h1>Secretária Virtual</h1><br>
+
+              <p>
+                O que é Lorem Ipsum?
+                Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas a cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+
+                Porque usamos isso?
+                É um fato há muito estabelecido que um leitor se distrairá com o conteúdo legível de uma página ao olhar para seu layout. O objetivo de usar Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, em vez de usar 'Conteúdo aqui, conteúdo aqui', fazendo com que pareça um inglês legível. Muitos pacotes de editoração eletrônica e editores de páginas da web agora usam Lorem Ipsum como seu modelo de texto padrão, e uma pesquisa por 'lorem ipsum' revelará muitos sites ainda em sua infância. Várias versões evoluíram ao longo dos anos, às vezes por acidente, às vezes de propósito (humor injetado e coisas do gênero).
+
+                O que é Lorem Ipsum?
+                Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas a cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+
+                Porque usamos isso?
+                É um fato há muito estabelecido que um leitor se distrairá com o conteúdo legível de uma página ao olhar para seu layout. O objetivo de usar Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, em vez de usar 'Conteúdo aqui, conteúdo aqui', fazendo com que pareça um inglês legível. Muitos pacotes de editoração eletrônica e editores de páginas da web agora usam Lorem Ipsum como seu modelo de texto padrão, e uma pesquisa por 'lorem ipsum' revelará muitos sites ainda em sua infância. Várias versões evoluíram ao longo dos anos, às vezes por acidente, às vezes de propósito (humor injetado e coisas do gênero).
+
+                O que é Lorem Ipsum?
+                Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas a cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+
+                Porque usamos isso?
+                É um fato há muito estabelecido que um leitor se distrairá com o conteúdo legível de uma página ao olhar para seu layout. O objetivo de usar Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, em vez de usar 'Conteúdo aqui, conteúdo aqui', fazendo com que pareça um inglês legível. Muitos pacotes de editoração eletrônica e editores de páginas da web agora usam Lorem Ipsum como seu modelo de texto padrão, e uma pesquisa por 'lorem ipsum' revelará muitos sites ainda em sua infância. Várias versões evoluíram ao longo dos anos, às vezes por acidente, às vezes de propósito (humor injetado e coisas do gênero).
+
+                O que é Lorem Ipsum?
+                Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas a cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+
+                Porque usamos isso?
+                É um fato há muito estabelecido que um leitor se distrairá com o conteúdo legível de uma página ao olhar para seu layout. O objetivo de usar Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, em vez de usar 'Conteúdo aqui, conteúdo aqui', fazendo com que pareça um inglês legível. Muitos pacotes de editoração eletrônica e editores de páginas da web agora usam Lorem Ipsum como seu modelo de texto padrão, e uma pesquisa por 'lorem ipsum' revelará muitos sites ainda em sua infância. Várias versões evoluíram ao longo dos anos, às vezes por acidente, às vezes de propósito (humor injetado e coisas do gênero).
+
+                O que é Lorem Ipsum?
+                Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500, quando um impressor desconhecido pegou uma galera de tipos e os embaralhou para fazer um livro de espécimes de tipos. Ele sobreviveu não apenas a cinco séculos, mas também ao salto para a composição eletrônica, permanecendo essencialmente inalterado. Foi popularizado na década de 1960 com o lançamento de folhas Letraset contendo passagens de Lorem Ipsum e, mais recentemente, com software de editoração eletrônica como Aldus PageMaker, incluindo versões de Lorem Ipsum.
+
+                Porque usamos isso?
+                É um fato há muito estabelecido que um leitor se distrairá com o conteúdo legível de uma página ao olhar para seu layout. O objetivo de usar Lorem Ipsum é que ele tem uma distribuição de letras mais ou menos normal, em vez de usar 'Conteúdo aqui, conteúdo aqui', fazendo com que pareça um inglês legível. Muitos pacotes de editoração eletrônica e editores de páginas da web agora usam Lorem Ipsum como seu modelo de texto padrão, e uma pesquisa por 'lorem ipsum' revelará muitos sites ainda em sua infância. Várias versões evoluíram ao longo dos anos, às vezes por acidente, às vezes de propósito (humor injetado e coisas do gênero).
+              </p>
+            </div>
+            <!-- FIM DO CONTAINER -->
+          </div>
+          <!-- FIM DO CARD2 -->
+          <!-- FIM DO CONTEÚDO -->
+        </div>
+        <!-- FIM DA LINHA -->
+      </div>
+      <!-- FIM DO CONTAINER -->
+    </main>
+    <!-- FIM DO MAIN -->
+
+    <!-- INÍCIO FOOTER -->
+    <footer class="cn-footer">
+      <!-- INÍCIO CONTAINER -->
+      <div class="container h-10">
+      </div>
+      <!-- FIM CONTAINER -->
+    </footer>
+    <!-- FIM FOOTER -->
+  </div>
+  <!-- FIM GERAL -->
+
+  <script src="script/script.js"></script>
+</body>
+
+</html>

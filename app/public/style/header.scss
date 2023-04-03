@@ -1,0 +1,129 @@
+/* INÍCIO DO HEADER */
+.cn-header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  height: 70px;
+  left: 0;
+  right: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: padding 0.3s ease;
+  background: $gradient;
+  z-index: 888;
+
+  /* INÍCIO DO CONTAINER */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+
+    /* INÍCIO DO MENU USER - DESKTOP*/
+    .cn-profile {
+      display: flex;
+
+      @media(min-width: 0px) and (max-width: 768px) {
+        display: none;
+      }
+
+      /* INÍCIO DO BOTÃO USER*/
+      .cn-avatar {
+        align-items: center;
+        padding: 10px;
+
+        .cn-name {
+          color: #fff;
+          font-weight: 600;
+          font-size: 13px;
+        }
+
+        img {
+          margin: 0 5px;
+        }
+
+        i {
+          font-size: 9px;
+          color: #fff;
+        }
+      }
+
+      .cn-avatar:active {
+        background: #4d3e6d2b; 
+        border-radius: 5px 5px 0 5px;
+      }
+      /* FIM DO BOTÃO USER*/
+
+      /* INÍCIO DO MENU USER*/
+      .cn-profile-menu {
+        align-items: flex-start;
+        position: fixed;
+        width: 246px;
+        margin: 61px 0 0 -58px;
+        padding: 0 16px 16px 16px;
+        background: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0px 0px 6px 0px rgb(1 1 1 / 10%);
+        border-radius: 0 0 0 10px;
+
+        .go-out {
+          display: flex;
+          justify-content: flex-end;
+          align-self: flex-end;
+          padding: 10px 0 24px 0;
+          background: #fff;
+          font-weight: 500;
+          color: $thirdColor;
+          text-decoration: none !important;
+        }
+
+        .go-out:hover {
+          color: #080808;
+        }
+
+        .cn-perfil-nome {
+          font-size: 16px;
+          font-weight: 600;
+        } 
+
+        .cn-profile-info {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+
+        .cn-profile-info {
+          padding: 0;
+          font-size: 16px;
+        }
+
+      }
+      /* FIM DO BOTÃO USER*/
+    }
+    /* FIM DO MENU USER - DESKTOP*/
+
+    /* INÍCIO DO BARS - MOBILE */
+    .cn-bars {
+      display: none;
+
+      @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        border: none;
+        box-sizing: border-box;
+        background: #00000026;
+      }
+
+      i {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+    /* FIM DO BARS - MOBILE */
+  }
+  /* FIM DO HEADER */
+}
+/* FIM DO HEADER */
